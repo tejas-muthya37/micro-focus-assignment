@@ -1,0 +1,25 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.footer .social-icons-group {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer .social-icons-group>* {
+    cursor: pointer;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
