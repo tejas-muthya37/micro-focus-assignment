@@ -1,7 +1,10 @@
 import "./header.css";
+import { useRadio } from "../../Context/radio-context";
 
 const Header = () => {
   const date = new Date();
+
+  const { positionCentered, setPositionCentered } = useRadio();
   return (
     <div className="header">
       <div className="header-left">
@@ -11,6 +14,8 @@ const Header = () => {
             name="position-input"
             type="radio"
             id="position-center-input"
+            checked={positionCentered}
+            onClick={() => setPositionCentered(true)}
           />
           <label htmlFor="position-center-input">Center</label>
         </div>
@@ -19,6 +24,8 @@ const Header = () => {
             name="position-input"
             type="radio"
             id="position-lower-right-input"
+            checked={!positionCentered}
+            onClick={() => setPositionCentered(false)}
           />
           <label htmlFor="position-lower-right-input">Lower Right</label>
         </div>

@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .window .floating-block {
@@ -21,4 +22,10 @@
 
 .window .floating-block h3:nth-child(2) {
     text-align: right;
+}
+
+.position-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
