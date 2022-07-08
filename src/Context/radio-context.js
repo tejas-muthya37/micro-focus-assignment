@@ -4,8 +4,17 @@ const RadioContext = createContext();
 
 const RadioProvider = ({ children }) => {
   const [positionCentered, setPositionCentered] = useState(true);
+  const [inHomepage, setInHomepage] = useState(true);
+
   return (
-    <RadioContext.Provider value={{ positionCentered, setPositionCentered }}>
+    <RadioContext.Provider
+      value={{
+        positionCentered,
+        setPositionCentered,
+        inHomepage,
+        setInHomepage,
+      }}
+    >
       {children}
     </RadioContext.Provider>
   );

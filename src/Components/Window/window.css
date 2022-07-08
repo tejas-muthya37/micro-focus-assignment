@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .window .floating-block {
@@ -25,7 +24,6 @@
 }
 
 .position-bottom-right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
